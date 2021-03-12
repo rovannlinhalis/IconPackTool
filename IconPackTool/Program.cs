@@ -33,7 +33,7 @@ namespace IconPackTool
 
                     Image state2 = img.AdjustImage(0.7f, 1.2f, 0.8f);
                     Image state3 = img.AdjustImage(1.0f, 1.0f, 0.4f);
-                    Image state4 = img.AdjustImage(1.2f, 0.9f, 1.3f);
+                    Image state4 = img.AdjustImage(1.2f, 0.9f, 1.1f);
                     Image state5 = img.AdjustImage(1.2f, 1.0f, 1.1f);
 
                     //Parallel.ForEach(sizes, s =>
@@ -78,7 +78,7 @@ namespace IconPackTool
 
                             }
 
-                            string newPath = Path.Combine(folder, fi.Name.Replace(fi.Extension, "") + "_" + s.ToString() + fi.Extension);
+                            string newPath = Path.Combine(folder, fi.Name.Replace(fi.Extension, "") + "_simple_" + s.ToString() + fi.Extension);
                             string newPathState = Path.Combine(folderStates, fi.Name.Replace(fi.Extension, "") + "_" + s.ToString() + fi.Extension);
                             img1.Save(newPath);
                             bmpStates.Save(newPathState);
