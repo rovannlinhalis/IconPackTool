@@ -15,7 +15,7 @@ namespace IconPackTool
             string dir = AppDomain.CurrentDomain.BaseDirectory;
             string[] files = Directory.GetFiles(dir, "*.png", SearchOption.TopDirectoryOnly);
 
-            List<int> sizes = new List<int>() { 16, 24, 32, 48, 64, 96, 128, 160 };
+            List<int> sizes = new List<int>() { 8,16, 24, 32, 48, 64, 96, 128, 160 };
 
             Parallel.ForEach(files, file =>
             {
