@@ -88,6 +88,10 @@ namespace IconPackTool.NET
                     //});
                 }
             });
+
+            Console.WriteLine("by: Rovann Linhalis - rovann@gmail.com");
+            Console.ReadKey();
+
         }
 
 
